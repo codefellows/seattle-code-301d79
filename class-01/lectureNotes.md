@@ -49,3 +49,19 @@
 - Use `npx create-react-app <application_name>` to start your project
 - refer to the reactAppRemove.md if you want to clean up the file structure before you start
 - JSX (syntax extension) allows us to write html markup in javascript 
+
+## Arrow Function
+- multiple ways to create a function
+  - mostly been doing function declarations in 201
+  - `const myFunct = function() {console.log()}`
+  - `const superCoolThing = () => {console.log('i am a function)}`
+  - function expresions are another way and arrow functions are one way to write a function expression 
+- function expression vs. declaration
+  - Function declarations load before any code is executed while Function expressions load only when the interpreter reaches that line of code.
+  - Similar to the var statement, function declarations are hoisted to the top of other code. Function expressions aren’t hoisted, which allows them to retain a copy of the local variables from the scope where they were defined.
+  - benifits of function expressions
+    - in closures - https://www.youtube.com/watch?v=qikxEIxsXco
+    - as an argument to another function
+    - to immediately invoke your function
+- allow us to write concise one line functions
+- the contextual this is not bound to the function if you use an arrow function, it will bubble up to the next non-arrow function
