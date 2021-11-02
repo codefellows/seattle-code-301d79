@@ -1,0 +1,29 @@
+## Custom Express Servers and node.js
+- **Why** 
+  - Secure our keys, when HTTP Referrer restrictions aren't an option
+  - Set us up to scale our application, without hammering the API, caching
+  - Provide our application a single source to fetch all of the data it needs rather than having to reach out to several sources
+  - Allow a server to do the hard work of formatting data to feed our front end
+- **What**
+  - Node.js and Express
+  - Web/HTTP Server
+  - Listens on a Port
+  - Receives Requests (GET), "does work", sends back a response.
+- **How**
+  - The biggest difference between that simple application and a server is that the app can just run and be done. Servers have to keep on running and waiting for many people to connect to it and ask for things.
+  - A Client is ...
+  - Any entity that has asked for something and is waiting for it
+    - "a customer at a fast food restaurant"
+    - "the cashier waiting for the cook give them  your hamburger"
+    - "code that calls a function and gets an answer back"
+    - "a browser that is waiting for html from a web server"
+    - "a server that has issued a query to a database"
+- A Server is  ...
+  - Any entity that is providing something to a client
+    - "the cashier at McDonalds" (from your point of view)
+    - "the cook at McDonalds" (from the cashier's point of view)
+    - "that function that is doing work for you"
+    - "the server that's giving .html, .css, .js to the browser"
+    - "the database that's giving data to the server"
+- These things are not just machines! In every conversation, interaction, and event that happens in the world, there are Clients and Servers.
+- Just as in real life interactions, between computers, there's an understood way of communicating.  A Protocol for exchanging data.
