@@ -45,6 +45,7 @@ As a result of completing Lecture 8 of Code 301, students will be able to:
 
 
 1. To make an API call in the server using axios:
+
   ```javaScript
   const url = `http://urlToAPI/?key=${process.env.MY_API_KEY}&city=seattle`;
 
